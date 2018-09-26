@@ -1,0 +1,1 @@
+(open shutters|close shutters|shadow shutters) (?P<Action>open|close|shadow) (?P<DeviceName>.*)
