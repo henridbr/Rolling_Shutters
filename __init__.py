@@ -39,8 +39,8 @@ LOGGER = getLogger(__name__)
 
 class RollingShutterSkill(MycroftSkill):
 
-def __init__(self):
-    super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
+    def __init__(self):
+        super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
 
     def initialize(self):
         self.load_data_files(dirname(__file__))
