@@ -39,11 +39,11 @@ LOGGER = getLogger(__name__)
 
 class RollingShutterSkill(MycroftSkill):
 
-    def __init__(self):
-        super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
+def __init__(self):
+    super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
 
     def initialize(self):
-	    self.load_data_files(dirname(__file__))
+        self.load_data_files(dirname(__file__))
 
         RollingShutter_command_intent = IntentBuilder("RollingShutterCommandIntent").require("RollingShutterKeyword").require("Action").build()
         self.register_intent(RollingShutter_command_intent, self.handle_RollingShutter_command_intent)
@@ -52,18 +52,18 @@ class RollingShutterSkill(MycroftSkill):
         action_word = message.data.get("Action")
         LOGGER.info("Command word: " + action_word)
         if action_word == "open":
-		    self.speak_dialog("roll.shut.open")   
-		    r = requests.get('http://192.168.0.85/?up')
-	    elif action_word == "close":
-		    self.speak_dialog("roll.shut.close") 
-		    r = requests.get('http://192.168.0.85/?down')
-	    elif action_word == "shadow":
-		    self.speak_dialog("roll.shut.shadow") 
-		    r = requests.get('http://192.168.0.85/?shadow')
-	    else:
-		    self.speak("not sure about that")  	
+            self.speak_dialog("roll.shut.open")   
+            r = requests.get('http://192.168.0.85/?up')
+        elif action_word == "close":
+            self.speak_dialog("roll.shut.close") 
+            r = requests.get('http://192.168.0.85/?down')
+        elif action_word == "shadow":
+            self.speak_dialog("roll.shut.shadow") 
+            r = requests.get('http://192.168.0.85/?shadow')
+        else:
+            self.speak("not sure about that")  	
 
-	def stop(self):
+    def stop(self):
         pass
 
 def create_skill():
