@@ -16,6 +16,7 @@
 # along with Mycroft Core.  If not, see <http://www.gnu.org/licenses/>.
 
 # SWK_rolling_shutters
+# Mycroft <-> Wemos mini
 # http://192.168.0.85/
 # command : /?up
 # command : /?down
