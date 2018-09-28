@@ -24,44 +24,38 @@
 
 
 # Mycroft libraries
-from os.path import dirname
 
 from adapt.intent import IntentBuilder
 from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
+from mycroft import intent_handler
 
 import requests
 
 
-__author__ = 'Henri','@henridbr' # hd@uip
+__author__ = 'henridbr' # hd@uip
 
 LOGGER = getLogger(__name__)
 
-class RollingShutterSkill(MycroftSkill):
+class RollingShuttersSkill(MycroftSkill):
 
     def __init__(self):
-        super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
+        super(RollingShuttersSkill, self).__init__(name="RollingShuttersSkill")
+        
+    @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword")
+    def handle_open_shutters_intent(self, message):
+        self.speak_dialog("roll.shut.open")
+        r = requests.get('http://192.168.0.85/?up')
 
-    def initialize(self):
-#        self.load_data_files(dirname(__file__))
-
-        RollingShutter_command_intent = IntentBuilder("RollingShutterCommandIntent").require("RollingShutterKeyword").require("Action").build()
-        self.register_intent(RollingShutter_command_intent, self.handle_RollingShutter_command_intent)
-
-    def handle_RollingShutter_command_intent(self, message):
-        action_word = message.data.get("Action")
-        LOGGER.info("Command word: " + action_word)
-        if action_word == "open":
-            self.speak_dialog("roll.shut.open")   
-            r = requests.get('http://192.168.0.85/?up')
-        elif action_word == "close":
-            self.speak_dialog("roll.shut.close") 
-            r = requests.get('http://192.168.0.85/?down')
-        elif action_word == "shadow":
-            self.speak_dialog("roll.shut.shadow") 
-            r = requests.get('http://192.168.0.85/?shadow')
-        else:
-            self.speak("not sure about that")  	
+    @intent_handler(IntentBuilder("CloseShuttersIntent").require("CloseShuttersKeyword")
+    def handle_close_shutters_intent(self, message):
+        self.speak_dialog("roll.shut.close")
+        r = requests.get('http://192.168.0.85/?down')
+                    
+    @intent_handler(IntentBuilder("ShadowShuttersIntent").require("ShadowShuttersKeyword")
+    def handle_shadow_shutters_intent(self, message):
+        self.speak_dialog("roll.shut.shadow")
+        r = requests.get('http://192.168.0.85/?shadow')
 
     def stop(self):
         pass
