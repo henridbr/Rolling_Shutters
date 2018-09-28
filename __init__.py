@@ -43,7 +43,7 @@ class RollingShutterSkill(MycroftSkill):
         super(RollingShutterSkill, self).__init__(name="RollingShutterSkill")
 
     def initialize(self):
-        self.load_data_files(dirname(__file__))
+#        self.load_data_files(dirname(__file__))
 
         RollingShutter_command_intent = IntentBuilder("RollingShutterCommandIntent").require("RollingShutterKeyword").require("Action").build()
         self.register_intent(RollingShutter_command_intent, self.handle_RollingShutter_command_intent)
