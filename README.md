@@ -14,13 +14,13 @@ It was too difficult to resist doing the same with Mycroft !
 * Wemos D1 mini
 
 
-## Installation:
+## Installation
 Refer to : **[Mycroft Skills Manager - msm](https://mycroft.ai/documentation/msm/)**
 
 Before installing check your own device IP address !
 
 
-## Usage:
+## Usage
 * to shut the rolling shutters : close shutters or close window or shutters down
 * to open the rolling shutters : open shutters or open windows or lift shutters
 * to shut the southern rolling shutters half way on sunny days : shadow shutters or sunny windows shut or southern windows shut
