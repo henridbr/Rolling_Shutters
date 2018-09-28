@@ -2,8 +2,8 @@
 **a SKILL for Mycroft**
 
 My home rolling shutters are radio controlled using remotes. 
-I use a Wemos mini D1 (ESP8266) in order to simulate one pushing the switches on a remote. 
-The Wemos mini D1 is listening for a GET on its port 80. A command is transmitted through the URI.
+I use a Wemos D1 mini (ESP8266) in order to simulate one pushing the switches on a remote. 
+The Wemos D1 mini is listening for a GET on its port 80. A command is transmitted through text in the URI.
 This works fine from desktop using browser or from Android devices (smartphone or tablet) using an APK I wrote thanks to Thunkable.
 It was too difficult to resist doing the same with Mycroft !
 
@@ -11,7 +11,7 @@ It was too difficult to resist doing the same with Mycroft !
 ## Devices
 * Raspberry 3 
 * Google AIY Voice kit 
-* Wemos mini D1 
+* Wemos D1 mini
 
 
 ## Installation:
