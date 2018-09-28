@@ -16,8 +16,8 @@
 #include <ESP8266WiFi.h>
 
 // Réseau Wifi
-const char* ssid = "freebox_SWK_extension2"; // RDC -> freebox_SWK_extension 
-const char* password = "juniperus16LARIX23paulownia18";
+const char* ssid = "my_SSID_name"; // RDC -> freebox_SWK_extension 
+const char* password = "my_SSID_passwd";
 WiFiServer server(80);
 
 
