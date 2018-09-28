@@ -29,8 +29,5 @@ Before installing check your own device IP address !
 * Henri Debierre
 
 
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
 ## Acknowledgments
 To those who wrote the Microft.AI documentation : [Developing a new Skill](https://mycroft.ai/documentation/skills/introduction-developing-skills/#structure-of-the-skill-repo)
