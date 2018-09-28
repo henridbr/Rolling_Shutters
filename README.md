@@ -1,7 +1,7 @@
 # Rolling_Shutters
 **a SKILL for Mycroft**
 
-My home rolling shutters are radio controlled using remotes. 
+My home rolling shutters are radio controlled by remotes. 
 I use a Wemos D1 mini (ESP8266) in order to simulate one pushing the switches on a remote. 
 The Wemos D1 mini is listening for a GET on its port 80. A command is transmitted through text in the URI.
 This works fine from desktop using browser or from Android devices (smartphone or tablet) using an APK I wrote thanks to Thunkable.
