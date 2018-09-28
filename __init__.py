@@ -61,4 +61,4 @@ class RollingShuttersSkill(MycroftSkill):
         pass
 
 def create_skill():
-    return RollingShutterSkill()
+    return RollingShuttersSkill()
