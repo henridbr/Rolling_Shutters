@@ -17,7 +17,7 @@
 
 # SWK_rolling_shutters
 # Mycroft <-> Wemos mini
-# http://192.168.0.85/
+# ESP8266_IP_address : http://192.168.0.85/
 # command : /?up
 # command : /?down
 # command : /?shadow
