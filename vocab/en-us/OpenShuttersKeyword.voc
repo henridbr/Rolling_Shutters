@@ -1,3 +1,4 @@
 open shutters
 open windows
 lift shutters
+shutters down
