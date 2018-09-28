@@ -42,17 +42,17 @@ class RollingShuttersSkill(MycroftSkill):
     def __init__(self):
         super(RollingShuttersSkill, self).__init__(name="RollingShuttersSkill")
         
-    @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword")
+    @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword"))
     def handle_open_shutters_intent(self, message):
         self.speak_dialog("roll.shut.open")
         r = requests.get('http://192.168.0.85/?up')
 
-    @intent_handler(IntentBuilder("CloseShuttersIntent").require("CloseShuttersKeyword")
+    @intent_handler(IntentBuilder("CloseShuttersIntent").require("CloseShuttersKeyword"))
     def handle_close_shutters_intent(self, message):
         self.speak_dialog("roll.shut.close")
         r = requests.get('http://192.168.0.85/?down')
                     
-    @intent_handler(IntentBuilder("ShadowShuttersIntent").require("ShadowShuttersKeyword")
+    @intent_handler(IntentBuilder("ShadowShuttersIntent").require("ShadowShuttersKeyword"))
     def handle_shadow_shutters_intent(self, message):
         self.speak_dialog("roll.shut.shadow")
         r = requests.get('http://192.168.0.85/?shadow')
