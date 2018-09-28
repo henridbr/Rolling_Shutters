@@ -16,6 +16,7 @@ It was too difficult to resist doing the same with Mycroft !
 
 ## Installation:
 Refer to : **[Mycroft Skills Manager - msm](https://mycroft.ai/documentation/msm/)**
+
 Before installing check your own device IP address !
 
 
