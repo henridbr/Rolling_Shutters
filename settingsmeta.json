@@ -4,10 +4,10 @@
   "skillMetadata": {
       "sections": [
           {
-              "name": "Remote device IP Address",
+              "name": "Rolling Shutters Remote device IP Address",
               "fields": [
                   {
-                      "name": "ipAddress",
+                      "name": "RS_IpAddress",
                       "type": "text",
                       "label": "Remote IP adress",
                       "value": ""
