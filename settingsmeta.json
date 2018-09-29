@@ -1,0 +1,30 @@
+{
+  "identifier": "RollingShuttersSkill",
+  "name": "RollingShuttersSkill",
+  "skillMetadata": {
+      "sections": [
+          {
+              "name": "Remote device IP Address",
+              "fields": [
+                  {
+                      "name": "ipAddress",
+                      "type": "text",
+                      "label": "Remote IP adress",
+                      "value": ""
+                  }
+              ]
+          }, 
+          {
+              "name": "Options",
+              "fields": [
+                  {
+                      "name": "enable_fallback",
+                      "type": "checkbox",
+                      "label": "Enable conversation component as fallback",
+                      "value": "true"
+                  }
+              ]
+          }
+      ]
+  }
+}
