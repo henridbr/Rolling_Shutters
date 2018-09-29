@@ -4,7 +4,7 @@
 My home rolling shutters are radio controlled by remotes. 
 I use a Wemos D1 mini (ESP8266) in order to simulate one pushing the switches on a remote. 
 The Wemos D1 mini is listening for a GET on its port 80. A command is transmitted through text in the URI.
-This works fine from desktop using browser or from Android devices (smartphone or tablet) using an APK I wrote thanks to Thunkable.
+This works fine from desktop using browser or from Android devices (smartphone or tablet) using an API I wrote thanks to Thunkable.
 It was too difficult to resist doing the same with Mycroft !
 
 
