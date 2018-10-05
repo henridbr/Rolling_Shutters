@@ -36,6 +36,8 @@ import requests
 __author__ = 'henridbr' # hd@uip
 
 Ip_Address = RS_IpAddress
+print("RS_IpAddress : "+RS_IpAddress)
+print("Ip_Address : "+Ip_Address)
 
 LOGGER = getLogger(__name__)
 
