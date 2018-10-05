@@ -35,7 +35,7 @@ import requests
 
 __author__ = 'henridbr' # hd@uip
 
-Ip_Address = RS_IpAddress
+Ip_Address = "192.168.0.85" #RS_IpAddress
 
 LOGGER = getLogger(__name__)
 
