@@ -1,0 +1,19 @@
+{
+  "identifier": "RollingShuttersSkill",
+  "name": "Rolling Shutters Skill",
+  "skillMetadata": {
+      "sections": [
+          {
+              "name": "Rolling Shutters Remote device IP Address",
+              "fields": [
+                  {
+                      "name": "RS_IpAddress",
+                      "type": "text",
+                      "label": "Remote IP adress (IP V4)",
+                      "value": ""
+                  }
+              ]
+           }
+      ]
+  }
+}
