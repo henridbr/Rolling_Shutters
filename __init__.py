@@ -41,11 +41,12 @@ LOGGER = getLogger(__name__)
 class RollingShuttersSkill(MycroftSkill):
 
     Ip_Address = self.settings.get('RS_IpAddress')
+    
     def __init__(self):
         super(RollingShuttersSkill, self).__init__(name="RollingShuttersSkill")
         
         
-    @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword")
+    @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword"))
     def handle_open_shutters_intent(self, message):
         self.speak_dialog("roll.shut.open")
         r = requests.get("http://"+Ip_Address+"/?up")
