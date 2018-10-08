@@ -9,7 +9,7 @@
                   {
                       "name": "RS_IpAddress",
                       "type": "text",
-                      "label": "Remote IP adress (IP V4)",
+                      "label": "Remote IP address (IP V4)",
                       "value": ""
                   }
               ]
