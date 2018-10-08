@@ -39,8 +39,6 @@ LOGGER = getLogger(__name__)
 
 
 class RollingShuttersSkill(MycroftSkill):
-
-    Ip_Address = self.settings.get('RS_IpAddress')
     
     def __init__(self):
         super(RollingShuttersSkill, self).__init__(name="RollingShuttersSkill")
