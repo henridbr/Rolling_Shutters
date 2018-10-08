@@ -44,7 +44,7 @@ class RollingShuttersSkill(MycroftSkill):
         super(RollingShuttersSkill, self).__init__(name="RollingShuttersSkill")
         
         Ip_Address = self.settings.get('RS_IpAddress')
-        print(IP_Address)
+        print('IP_Address')
         
     @intent_handler(IntentBuilder("OpenShuttersIntent").require("OpenShuttersKeyword"))
     def handle_open_shutters_intent(self, message):
