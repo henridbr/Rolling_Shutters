@@ -19,6 +19,10 @@ Refer to : **[Mycroft Skills Manager - msm](https://mycroft.ai/documentation/msm
 
 Before installing check your own device IP address !
 
+Then open https://home.mycroft.ai and go to the Skills page.
+Look for the Rolling Shutters Skill form and fill in  it.
+![Rolling Shutters form](/images/Mycroft-Home-Skills.jpg)
+
 
 ## Usage
 * to shut the rolling shutters : close shutters or close window or shutters down
